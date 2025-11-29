@@ -1,16 +1,49 @@
-# React + Vite
+# 🎓 Student Activity Manager
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Student Activity Manager is a **React-based interactive application** that helps students learn and practice important React concepts such as **events**, **conditional rendering**, **refs**, **fragments**, and **passing arguments in event handlers**.
 
-Currently, two official plugins are available:
+This project demonstrates a simple student management system where users can:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Add students  
+- Toggle student details  
+- Mark present/absent  
+- Delete students  
 
-## React Compiler
+Everything is handled **purely with React state**, without any backend or database.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### ✅ React Concepts Covered
+- **Event Handling** (`onChange`, `onSubmit`, `onClick`)
+- **Conditional Rendering**
+- **State Management (useState)**
+- **Refs Usage (focus management)**
+- **Passing arguments in event handlers**
+- **Fragments to avoid extra DOM elements**
+
+---
+
+## 🧩 Component Flow
+
+### 📌 `StudentForm`
+- Uses **Refs** to read input value.
+- Autofocuses input on load.
+- Resets and refocuses after adding a student.
+- Shows validation errors.
+
+### 📌 `StudentList`
+- Renders all students using **Fragments**.
+- Shows "No Students Found" when list is empty.
+
+### 📌 `StudentCard`
+- Shows name, attendance, and toggle details.
+- Buttons use **event handler arguments** like:
+  ```js
+  onClick={() => deleteStudent(id)}
+
+
+## Screenshot
+
+![App Screenshot](screenshot/Screenshot%202025-11-29%20161411.png)
