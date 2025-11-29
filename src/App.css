@@ -1,0 +1,54 @@
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  margin: 40px auto;
+  width: 700px;
+  text-align: center;
+  font-family: Arial;
+}
+
+.student-form input {
+  padding: 8px;
+  width: 250px;
+}
+
+.student-form button {
+  padding: 8px 12px;
+  margin-left: 10px;
+}
+
+.dashboard {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  margin: 15px 0;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.card button {
+  margin: 5px;
+  padding: 6px 10px;
+}
+
+.delete {
+  background-color: rgb(255, 80, 80);
+  color: white;
+}
+
+.error {
+  color: red;
+  margin-top: -10px;
+}
+
+.empty {
+  color: gray;
+  margin: 20px 0;
+}
